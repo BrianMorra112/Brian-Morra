@@ -219,7 +219,7 @@ img{
     box-shadow:  6px 6px 12px #0b0517,
                 -6px -6px 12px #110721;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .contenedor {
         flex-direction: column;
     }
