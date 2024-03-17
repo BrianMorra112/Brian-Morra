@@ -219,7 +219,7 @@ img{
     box-shadow:  6px 6px 12px #0b0517,
                 -6px -6px 12px #110721;
 }
-@media screen and (max-width: 812px) and (orientation: portrait) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
     body, html {
         padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     }
