@@ -230,7 +230,7 @@ img{
         padding-top: env(safe-area-inset-top);
         padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
-        height: 70px; /* Ajustar según sea necesario */
+        height: 50px; /* Ajustar según sea necesario */
     }
 
     ul {
