@@ -219,3 +219,40 @@ img{
     box-shadow:  6px 6px 12px #0b0517,
                 -6px -6px 12px #110721;
 }
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h4, h1, .about-me {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+        left: 10%;
+        top: 60%;
+    }
+
+    .projects {
+        left: 5%;
+        width: 90%;
+    }
+
+    .A-h2 {
+        right: 0%;
+        text-align: center;
+    }
+}
