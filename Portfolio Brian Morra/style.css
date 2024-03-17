@@ -219,71 +219,45 @@ img{
     box-shadow:  6px 6px 12px #0b0517,
                 -6px -6px 12px #110721;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 812px) and (orientation: portrait) {
     body, html {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar {
-        padding: 0 10px;
-        text-align: center;
-    }
-
-    .navbar ul {
-        justify-content: center;
-        padding: 10px 0;
-    }
-
-    .navbar .link {
-        font-size: 16px;
-        padding: 0.5rem;
-    }
-
-    .contenedor, .about-me, h1, h4, img, .projects, .A-h2, .btn {
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .contenedor {
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .btn {
-        position: static;
-        margin: 20px auto;
-        display: block;
-    }
-
-    img {
-        width: 90%;
-        margin: 20px auto;
-        display: block;
-    }
-
-    .projects, .A-h2 {
-        position: static;
-    }
-}
-@media screen and (device-width: 375px) and (device-height: 812px),
-       screen and (device-width: 414px) and (device-height: 896px),
-       screen and (device-width: 390px) and (device-height: 844px),
-       screen and (device-width: 428px) and (device-height: 926px),
-       screen and (device-width: 375px) and (device-height: 780px) {
-    body {
-        padding-top: env(safe-area-inset-top);
-        padding-bottom: env(safe-area-inset-bottom);
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     }
 
     .navbar {
         padding-top: calc(env(safe-area-inset-top) + 10px);
+    }
+
+    .contenedor, .projects, .about-me, .btn, h4, h1, img {
+        margin-left: env(safe-area-inset-left);
+        margin-right: env(safe-area-inset-right);
+    }
+
+    img {
+        width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right) - 20px);
+        top: 20%; 
+        position: relative; 
+    }
+
+    .btn, .link, h4, h1, .about-me {
+        font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (812 - 320))); 
+        padding: 0.5rem 1rem; 
+    }
+
+    .btn {
+        top: initial;
+        bottom: 5%; 
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .about-me, .projects {
+        top: initial; 
+        padding-bottom: env(safe-area-inset-bottom); 
+    }
+
+    .navbar, .contenedor, .projects, .about-me, .video, .video-Qr {
+        position: relative; 
     }
 }
 
