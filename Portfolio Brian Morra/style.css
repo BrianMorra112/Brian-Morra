@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #18181b;
-    font-family: 'Arial', sans-serif; /* Es importante definir una familia de fuente por defecto */
+    font-family: 'Arial', sans-serif; 
 }
 
 html {
