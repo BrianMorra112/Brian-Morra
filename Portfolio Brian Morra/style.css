@@ -270,5 +270,21 @@ img{
         position: static;
     }
 }
+@media screen and (device-width: 375px) and (device-height: 812px),
+       screen and (device-width: 414px) and (device-height: 896px),
+       screen and (device-width: 390px) and (device-height: 844px),
+       screen and (device-width: 428px) and (device-height: 926px),
+       screen and (device-width: 375px) and (device-height: 780px) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
+    .navbar {
+        padding-top: calc(env(safe-area-inset-top) + 10px);
+    }
+}
 
 
