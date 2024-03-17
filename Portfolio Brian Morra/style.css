@@ -219,40 +219,65 @@ img{
     box-shadow:  6px 6px 12px #0b0517,
                 -6px -6px 12px #110721;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar, .contenedor, ul, .btn, h4, h1, img, .about-me, .projects, .A-h2 {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
     .contenedor {
-        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
     }
 
     ul {
         flex-direction: column;
-        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .link {
+        font-size: 18px;
+        padding: 0.5rem 1rem;
     }
 
     .btn {
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+        top: auto;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     h4, h1, .about-me {
-        left: 5%;
-        right: 5%;
+        position: static;
         text-align: center;
+        padding: 10px 0;
     }
 
     img {
-        width: 80%;
-        left: 10%;
-        top: 60%;
+        width: 100%;
+        position: static;
+        margin: 20px 0;
     }
 
     .projects {
-        left: 5%;
-        width: 90%;
+        position: static;
+        padding-bottom: 20px;
     }
 
     .A-h2 {
-        right: 0%;
+        font-size: 36px;
+        position: static;
         text-align: center;
     }
 }
+
