@@ -226,55 +226,30 @@ img{
     .link {
         font-size: 16px; /* Ajustar el tamaño del texto para dispositivos móviles */
         padding: 10px; /* Reducir el padding para ahorrar espacio */
-    } font-size: 18px; 
     }
-
     .contenedor, .about-me, .projects, .video, .video-Qr {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-        width: auto; 
-        margin: 10px;
+        flex-direction: column; /* Alinear elementos verticalmente */
+        align-items: center; /* Centrar elementos */
+        text-align: center; /* Asegurar que el texto esté centrado */
+        width: auto; /* Ajustar ancho */
+        margin: 10px; /* Agregar un poco de margen */
     }
-
-@media only screen and (max-width: 812px) {
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    ul {
-        padding: 0; /* Ajustar padding para móviles */
-    }
-
-    .link {
-        font-size: 18px; /* Tamaño más pequeño para enlaces en móviles */
-    }
-
-    .contenedor, .about-me, .projects, .video, .video-Qr {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-        width: auto; 
-        margin: 10px; 
-    }
-
     img, .video, .video-Qr {
-        width: 90%; /* Hacer imágenes y videos más pequeños y adaptativos */
-        height: auto; /* Mantener la proporción */
+        width: 90%; /* Hacer que las imágenes y videos sean responsivos */
     }
 
     h1, h4, .btn, .about-me {
-        font-size: 80%; /* Reducir el tamaño del texto para ajustar en pantallas pequeñas */
-        text-align: center; /* Asegurar que el texto esté centrado */
-        padding: 10px; /* Agregar padding para evitar que el texto esté muy pegado a los bordes */
+        font-size: 16px; /* Ajustar el tamaño del texto */
+        text-align: center; /* Centrar el texto */
     }
 
     .projects, .A-h2, .h3, .p-1 {
-        width: 95%; /* Ajustar el ancho de estos elementos para que no ocupen todo el ancho de la pantalla */
+        width: 95%; /* Ajustar el ancho */
     }
-}
-    }
-}
 
+    .content {
+        padding: 20px; /* Agregar padding al contenido para mejor lectura */
+    }
+}
 
 
