@@ -179,6 +179,9 @@ img{
 .A-h2:hover::after{
     transform: scale(1);
 }
+.A-projects{
+    text-decoration: none; 
+}
 
 .h3{
     padding-top: 30px;
