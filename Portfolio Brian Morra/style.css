@@ -217,15 +217,16 @@ img{
 
 @media only screen and (max-width: 812px) {
     .navbar ul {
-        flex-direction: column;
-    }
-
-    ul {
-        padding: 0; 
+        display: flex; /* Mantener los elementos de la lista en línea */
+        flex-wrap: wrap; /* Permitir que los elementos de la lista se ajusten según el ancho disponible */
+        justify-content: center; /* Centrar los elementos en la lista */
+        padding: 0;
     }
 
     .link {
-        font-size: 18px; 
+        font-size: 16px; /* Ajustar el tamaño del texto para dispositivos móviles */
+        padding: 10px; /* Reducir el padding para ahorrar espacio */
+    } font-size: 18px; 
     }
 
     .contenedor, .about-me, .projects, .video, .video-Qr {
@@ -236,19 +237,42 @@ img{
         margin: 10px;
     }
 
+@media only screen and (max-width: 812px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    ul {
+        padding: 0; /* Ajustar padding para móviles */
+    }
+
+    .link {
+        font-size: 18px; /* Tamaño más pequeño para enlaces en móviles */
+    }
+
+    .contenedor, .about-me, .projects, .video, .video-Qr {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        width: auto; 
+        margin: 10px; 
+    }
+
     img, .video, .video-Qr {
-        width: 90%; 
-        height: auto; 
+        width: 90%; /* Hacer imágenes y videos más pequeños y adaptativos */
+        height: auto; /* Mantener la proporción */
     }
 
     h1, h4, .btn, .about-me {
-        font-size: 80%; 
-        text-align: center; 
-        padding: 10px;
+        font-size: 80%; /* Reducir el tamaño del texto para ajustar en pantallas pequeñas */
+        text-align: center; /* Asegurar que el texto esté centrado */
+        padding: 10px; /* Agregar padding para evitar que el texto esté muy pegado a los bordes */
     }
 
     .projects, .A-h2, .h3, .p-1 {
-        width: 95%; 
+        width: 95%; /* Ajustar el ancho de estos elementos para que no ocupen todo el ancho de la pantalla */
+    }
+}
     }
 }
 
