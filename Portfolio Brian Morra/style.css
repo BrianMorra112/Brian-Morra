@@ -3,10 +3,20 @@ body {
     padding: 0;
     background-color: #18181b;
     font-family: 'Arial', sans-serif; 
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.content {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 .span {
@@ -39,6 +49,26 @@ html {
     align-items: center;
     height: 15vh; 
 }
+.nav-language {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    margin: 0 auto;
+    position: absolute;
+    top: 75%;
+    left: 18%;
+}
+
+.language {
+    flex: 0 1 calc(33.333% - 10px);
+    max-width: 100%;
+    margin: 2px;
+    height: auto;
+}
+.language:hover {
+    transform: scale(1.1);
+}
+
 
 ul {
     display: flex;
@@ -52,7 +82,7 @@ ul {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
-    padding: 1rem 2rem;
+    padding: 1rem 7rem;
     position: relative;
 }
 
@@ -81,21 +111,7 @@ ul {
 .link:hover::before,
 .link:hover::after {
     transform: scaleX(1);
-}
-.btn{
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #0b0bd2;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 37%;
-    left: 28.2%;
-}
-.btn:hover{
-    background-color: #1e40af;
+    padding: 0;
 }
 
 
@@ -113,7 +129,7 @@ h1{
     top:42%;
     left: 11%;
 }
-img{
+.hidden{
     width: 500px;
     position: absolute;
     top: 30%;;
@@ -189,6 +205,9 @@ img{
     color: #fff;
     font-family: 'league gothic', helvetica, serif;
 }
+.h3:hover {
+    transform: scale(1.1);
+}
 
 .p-1{
     background-color: #18181b;
@@ -218,6 +237,26 @@ img{
                 -6px -6px 12px #110721;
 }
 
+
+.div-social { 
+    color: #fff;
+    padding: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    position: absolute;
+    top: 77%;
+    right: 15%;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 24px; 
+}
+
+
 @media only screen and (max-width: 812px) {
     .navbar ul {
         display: flex;
@@ -237,7 +276,7 @@ img{
         width: auto;
         margin: 10px;
     }
-    img, .video, .video-Qr {
+    img, .video, .video-Qr  .language{
         width: 90%;
     }
 
@@ -249,6 +288,7 @@ img{
     .projects, .A-h2, .h3, .p-1 {
         width: 95%;
     }
+    
 
     .content {
         padding: 20px; 
@@ -257,5 +297,3 @@ img{
         visibility: hidden;
 }
 }
-
-
