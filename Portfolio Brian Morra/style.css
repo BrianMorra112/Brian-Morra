@@ -242,10 +242,13 @@ h1 {
         width: auto;
         margin: 10px;
     }
-    .hidden .language{
-        visibility: hidden;
-    }
+
     img, .video, .video-Qr {
         width: 90%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .hidden, .language {
+        display: none;
     }
 }
