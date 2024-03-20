@@ -224,7 +224,7 @@ h1 {
     color: #fff;
     font-size: 24px;
 }
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 810px) {
     .navbar ul {
         display: flex;
         flex-wrap: wrap;
@@ -241,6 +241,9 @@ h1 {
         text-align: center;
         width: auto;
         margin: 10px;
+    }
+    .hidden .language{
+        visibility: hidden;
     }
     img, .video, .video-Qr {
         width: 90%;
